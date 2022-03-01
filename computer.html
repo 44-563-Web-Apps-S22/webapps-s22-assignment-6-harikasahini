@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+ 
+<body>
+<title>computer order</title>
+<h2>Harika Sahini orders a computer</h2>
+
+<form>
+    
+    <input type ="checkbox" id="checkbox_1" name="checkbox_1" value="extra">
+    <label for="checkbox_1">Extra memory</label><br>
+
+    <input type ="checkbox" id="checkbox_2" name="checkbox_2" value="mouse"> 
+    <label for="checkbox_2">Mouse</label><br>
+
+    <input type ="checkbox" id="checkbox_3" name="checkbox_3" value="cell"> 
+    <label for="checkbox_3">Cell service</label><br>
+
+    <input type="button" onclick="orderComputer()" value="Order a computer">
+</form>
+
+
+<p id="result">This text will be replaced </p>
+
+<script> 
+    var my_computer={}
+    out = document.getElementById("result")
+    function orderComputer(){
+        var my_computer={}
+        console.log("Getting form values")
+        extra=document.getElementById("checkbox_1").checked
+        mouse=document.getElementById("checkbox_2").checked
+        cell=document.getElementById("checkbox_3").checked
+        if(extra){
+           my_computer.extra=true
+        } else {
+            my_computer.extra=false
+        }
+        if(mouse){
+           my_computer.mouse=true
+        } else {
+            my_computer.mouse=false
+        }
+        if(cell){
+           my_computer.cell=true
+        } else {
+            my_computer.cell=false
+        }
+        document.getElementById("result").innerHTML = "extra: " + my_computer.extra + "   mouse: " + my_computer.mouse + "   cell: " + my_computer.cell
+    }
+</script>
+
+</body>
+</html> 
