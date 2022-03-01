@@ -32,6 +32,27 @@
                 }
             }
         </script>
+        <div><img src="Anhingaas.jpg" id="bird" height="100px" width="100px" onclick="swapImage()"></div>
+        <script>
+            var useImage=1;
+            function swapImage(){
+                switch(useImage){
+                    case 1:
+                    document.getElementById("bird").src="Hornbill.jpg"
+                    useImage=2;
+                    break;
+                    case 2:
+                    document.getElementById("bird").src="Sparrows.jpg"
+                    useImage=3;
+                   break;
+                    case 3:
+                    document.getElementById("bird").src="Anhingaas.jpg"
+                    useImage=1;
+                    break;
+                }
+            }
+        </script>
+     
     </form>
 </body>
 </html> 
