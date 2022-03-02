@@ -3,9 +3,17 @@
  
 <body>
 <title>computer order</title>
-<h2>Harika Sahini orders a computer</h2>
+<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" 
+      integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" 
+      integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+<h2 style="background-color:rgb(240, 100, 100); text-align: center;">Harika Sahini orders a computer</h2>
 
-<form>
+<form style="background-color:bisque;">
     
     <input type ="checkbox" id="checkbox_1" name="checkbox_1" value="extra">
     <label for="checkbox_1">Extra memory</label><br>
@@ -16,20 +24,20 @@
     <input type ="checkbox" id="checkbox_3" name="checkbox_3" value="cell"> 
     <label for="checkbox_3">Cell service</label><br>
 
-    <input type="button" onclick="orderComputer()" value="Order a computer">
+    <input type="button" onclick="orderComputer()" value="Order a computer" class="btn-warning" >
 </form>
-<p id="result">This text will be replaced </p>
-<form>
+<p id="result" style="background-color:rgb(240, 100, 100);">This text will be replaced </p>
+<form style="background-color:bisque;">
     <label for="property_name">Enter a property name </label>
-    <input type ="text" id="property_name" name="property_name" value=engraved> <br>
+    <input type ="text" id="property_name" name="property_name" value=engraved class="form-control-sm"> <br>
 
     <label for="property_value">Enter a value</label>
-    <input type ="text" id="property_value" name="property_value"> <br>
+    <input type ="text" id="property_value" name="property_value" class="form-control-sm"> <br>
 
-    <input type="button" onclick="updateComputer()" value="Update the computer">
+    <input type="button" onclick="updateComputer()" value="Update the computer" class="btn-warning">
 </form>
 
-<p id="property">This text will be replaced </p>
+<p id="property" style="background-color:rgb(240, 100, 100);">This text will be replaced </p>
 
 <script> 
     var my_computer={}
